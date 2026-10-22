@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Miyanali | SprintTime Sprint Timer & DynamicCrop Video Editor</title>
+
+  <meta name="description" content="Discover SprintTime, an Android sprint timer that measures 100m, 200m and 400m running times from video, and DynamicCrop, a video cropping editor with zoom, pan, rotation and keyframe tracking. By Mehdi Azizi.">
+
+  <meta name="author" content="Mehdi Azizi">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://miyanali.com/">
+
+  <meta property="og:title" content="Miyanali | SprintTime & DynamicCrop">
+  <meta property="og:description" content="Explore Android apps for sprint timing from video and dynamic video cropping.">
+  <meta property="og:url" content="https://miyanali.com/">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      font-family: Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e3edf0, #bdd9f6);
+      color: #1e3c18;
+      direction: rtl;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      padding: 35px 25px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(30, 56, 24, 0.2);
+      overflow-wrap: anywhere;
+    }
+
+    .miyanali {
+      margin-bottom: 22px;
+      color: #1e8518;
+      font-size: clamp(32px, 8vw, 45px);
+      font-weight: 900;
+      line-height: 1.2;
+      direction: ltr;
+      text-shadow: 1px 1px 3px rgba(30, 56, 24, 0.2);
+    }
+
+    .message {
+      margin: 14px 0;
+      line-height: 1.9;
+    }
+
+    .instagram {
+      display: inline-block;
+      margin: 8px 0;
+      padding: 9px 16px;
+      border-radius: 12px;
+      background: #e0e5ff;
+      box-shadow: 0 4px 8px rgba(29, 24, 133, 0.15);
+      color: #1d1885;
+      font-size: 22px;
+      font-weight: 600;
+      direction: ltr;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      transition: 0.2s ease;
+    }
+
+    .instagram:hover {
+      background: #1d1885;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .apps-title {
+      margin: 30px 0 8px;
+      padding-top: 22px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 22px;
+      line-height: 1.6;
+      color: #25334a;
+    }
+
+    .apps-intro {
+      margin: 0 0 20px;
+      color: #5b6575;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    .apps {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      direction: ltr;
+    }
+
+    .app-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      padding: 18px 10px;
+      border: 1px solid #e5e7eb;
+      border-radius: 15px;
+      background: #fff;
+      color: #1f2937;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.5;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .app-link:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 7px 18px rgba(15, 23, 42, 0.12);
+    }
+
+    .app-link img {
+      display: block;
+      width: 72px;
+      height: 72px;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 18px;
+    }
+
+    .app-description {
+      color: #5b6575;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.8;
+      direction: ltr;
+    }
+
+    .app-details {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid #e5e7eb;
+      color: #4b5563;
+      font-size: 13px;
+      line-height: 1.9;
+    }
+
+    .app-details h3 {
+      color: #25334a;
+      font-size: 17px;
+      margin: 18px 0 6px;
+    }
+
+    .app-details p {
+      margin: 0 0 12px;
+    }
+
+    .app-details a {
+      color: #1769aa;
+      text-decoration: none;
+    }
+
+    .app-details a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 350px) {
+      body {
+        padding: 12px;
+      }
+
+      .container {
+        padding: 25px 16px;
+      }
+
+      .apps {
+        gap: 10px;
+      }
+
+      .app-link {
+        padding: 14px 6px;
+        font-size: 14px;
+      }
+
+      .app-link img {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+
+    <p class="message" style="color:#455;font-weight:bold;font-size:18px">
+      صفحه مورد نظر پیدا نشد.
+    </p>    <p class="message">
+      سایت میانالی فعلاً از دسترس خارج شده است.
+    </p>
+
+    <p class="message">
+      برای اطلاع از برنامه‌های آینده، پیج اینستاگرام سایت را دنبال کنید.
+    </p>
+
+    <a
+      class="instagram"
+      href="https://www.instagram.com/miyanali_com/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >@miyanali_com</a>
+
+    <section aria-labelledby="apps-heading">
+      <h2 class="apps-title" id="apps-heading">
+        Android Apps by Miyanali
+      </h2>
+
+      <p class="apps-intro" dir="ltr">
+        Discover mobile apps for sprint timing and video editing.
+      </p>
+
+      <div class="apps">
+
+        <a
+          class="app-link"
+          href="https://drmehdiazizi.github.io/sprinttime/"
+          aria-label="SprintTime: Android sprint timer for measuring running times from video"
+        >
+          <img
+            src="https://raw.githubusercontent.com/drmehdiazizi/sprinttime/main/icon.png"
+            alt="SprintTime sprint timer app icon"
+            width="72"
+            height="72"
+          >
+
+          <span>SprintTime</span>
+
+          <span class="app-description">
+            100m, 200m and 400m Sprint Timer
+          </span>
+        </a>
+
+        <a
+          class="app-link"
+          href="https://drmehdiazizi.github.io/DynamicCrop/"
+          aria-label="DynamicCrop: Android video crop editor with zoom, pan, rotation and keyframes"
+        >
+          <img
+            src="https://raw.githubusercontent.com/drmehdiazizi/DynamicCrop/main/icon.png"
+            alt="DynamicCrop video editor app icon"
+            width="72"
+            height="72"
+          >
+
+          <span>DynamicCrop</span>
+
+          <span class="app-description">
+            Dynamic Video Cropping and Editing
+          </span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="app-details" aria-label="App information">
+
+      <h3 dir="ltr">SprintTime — Measure Sprint Times from Video</h3>
+
+      <p dir="ltr">
+        SprintTime is an Android sprint timing app that helps runners
+        measure 100-meter, 200-meter and 400-meter running times from
+        recorded videos. Review your sprint performance and analyze
+        running times using video-based timing.
+        <a href="https://drmehdiazizi.github.io/sprinttime/">
+          Explore SprintTime and learn how it works.
+        </a>
+      </p>
+
+      <h3 dir="ltr">DynamicCrop — Dynamic Video Cropping Editor</h3>
+
+      <p dir="ltr">
+        DynamicCrop is an Android video editing app for dynamic video
+        cropping, adjustable zoom, pan, rotation and keyframe-based
+        crop control. Customize the crop area throughout a video and
+        export your edited video.
+        <a href="https://drmehdiazizi.github.io/DynamicCrop/">
+          Explore DynamicCrop and its video editing features.
+        </a>
+      </p>
+
+    </section>
+
+  </main>
+</body>
+</html>
