@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>میانالی | وبسایت شهر میانه</title>
+  <style>
+    /* Reset */
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      font-size: 20px;
+      font-family: Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e3edf0, #bdd9f6);
+      color: #1e3c18;
+      direction: rtl;
+      -webkit-text-size-adjust: 100%;
+      /* prevent font resizing on mobile */
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(30, 56, 24, 0.3);
+      max-width: 350px;
+      width: 100%;
+      word-wrap: break-word;
+    }
+
+    .miyanali {
+      font-size: 45px;
+      font-weight: 900;
+      color: #1e8518;
+      text-shadow: 1px 1px 3px rgba(30, 56, 24, 0.4);
+      margin-bottom: 25px;
+      user-select: none;
+      line-height: 1.1;
+    }
+
+    .container>div {
+      margin: 12px 0;
+      line-height: 1.5;
+      word-break: break-word;
+    }
+
+    a {
+      color: #1d1885;
+      font-size: 26px;
+      font-weight: 600;
+      text-decoration: none;
+
+      /* LTR handling */
+      direction: ltr;
+      unicode-bidi: embed;
+      display: inline-block;
+      text-align: left;
+
+      padding: 8px 16px;
+      border-radius: 12px;
+      background: #e0e5ff;
+      box-shadow: 0 4px 8px rgba(29, 24, 133, 0.2);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      user-select: text;
+      max-width: 100%;
+      /* make sure it doesn't overflow */
+      overflow-wrap: anywhere;
+      /* allow breaking inside long words */
+    }
+
+    a:hover {
+      background-color: #1d1885;
+      color: white;
+      box-shadow: 0 6px 12px rgba(29, 24, 133, 0.6);
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 420px) {
+      .container {
+        padding: 25px 20px;
+        max-width: 100%;
+      }
+
+      .miyanali {
+        font-size: 42px;
+      }
+
+
+
+      a {
+        font-size: 22px;
+        padding: 6px 12px;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .miyanali {
+        font-size: 36px;
+      }
+
+      a {
+        font-size: 18px;
+        padding: 5px 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="miyanali">Miyanali.com</div>
+    <div>Error: 503 Unavailable</div>
+    <div>سایت میانالی فعلا از دسترس خارج شده است</div>
+    <div><a href="http://instagram.com/miyanali_com" target="_blank" rel="noopener noreferrer">@miyanali_com</a></div>
+    <div>برای اطلاع از برنامه‌های آینده پیج اینستاگرام سایت را فالو کنید.</div>
+  </div>
+</body>
+
+</html>
